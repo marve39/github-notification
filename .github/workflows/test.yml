@@ -2,11 +2,11 @@ on:
   push:
     branches:
       - master
-      - development
+      - dev
   pull_request:
     branches:
       - main
-      - development
+      - dev
 jobs:
   custom_test:
     runs-on: ubuntu-latest
