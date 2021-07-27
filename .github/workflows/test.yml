@@ -7,10 +7,10 @@ jobs:
     steps:
       - name: Release Version
         run: |
-          echo "${ GITHUB_REF }"
-          echo "${ GITHUB_HEAD_REF }"
-          echo "${ GITHUB_BASE_REF }"
-          echo "${ GITHUB_SHA }"
+          echo "$GITHUB_REF"
+          echo "$GITHUB_HEAD_REF"
+          echo "$GITHUB_BASE_REF"
+          echo "$GITHUB_SHA"
       - name: Get Pokemon name
         uses: ./ # Uses an action in the root directory
         with:
