@@ -1,5 +1,12 @@
-on: [push, pull-request]
-
+on: 
+  push:
+    branches:
+      - master
+      - development
+  pull_request:
+    branches:
+      - main
+      - development
 jobs:
   custom_test:
     runs-on: ubuntu-latest
