@@ -1,0 +1,1084 @@
+{
+
+    "name": "central/b2c-platform",
+
+    "description": "eCommerce Platform for Growth (Enterprise Edition)",
+
+    "type": "project",
+
+    "license": [
+
+        "proprietary"
+
+    ],
+
+    "config": {
+
+        "preferred-install": {
+
+            "central/*": "source",
+
+            "cds/*": "source",
+
+            "*": "dist"
+
+        },
+
+        "sort-packages": true
+
+    },
+
+    "scripts": {
+
+        "post-install-cmd": [
+
+            "php pipeline/add_line_break_composer.php"
+
+        ],
+
+        "post-update-cmd": [
+
+            "php pipeline/add_line_break_composer.php"
+
+        ]
+
+    },
+
+    "require": {
+
+        "aheadworks/module-rbslider": "1.3.0",
+
+        "aheadworks/module-shop-by-brand": "1.1.1",
+
+        "amasty/amcart": "1.6.3",
+
+        "amasty/base": "1.12.5",
+
+        "amasty/coupons": "2.0.2",
+
+        "amasty/module-advanced-conditions": "1.5.2",
+
+        "amasty/module-banners-lite": "1.0.18",
+
+        "amasty/module-salesrulewizard": "1.0.3",
+
+        "amasty/module-special-promo": "2.8.0",
+
+        "amasty/module-special-promo-pro": "2.8.4",
+
+        "amasty/module-xcoupon": "1.1.14",
+
+        "amasty/paction": "1.1.2",
+
+        "amasty/promo": "2.10.2",
+
+        "amasty/securityauth": "1.1.3",
+
+        "amasty/xnotif": "1.8.5",
+
+        "catalog-service/product-change-publisher": "1.0.27",
+
+        "cds/2c2p-ipp": "1.0.1",
+
+        "cds/abandoned-cart-email": "1.0.2",
+
+        "cds/catalog-manual-ranking-tool": "1.0.2",
+
+        "cds/category-attributes": "1.0.6",
+
+        "cds/customer-attributes": "1.1.26",
+
+        "cds/hours-pickup-prepare-data": "1.0.2",
+
+        "cds/msi-migration": "1.0.4",
+
+        "cds/omni-estimate-shipping-method": "1.0.1",
+
+        "cds/order-detail": "1.1.23",
+
+        "cds/order-email": "1.0.0",
+
+        "cds/payment-mcom-mapper": "1.0.5",
+
+        "cds/payment-service-installment": "1.0.3",
+
+        "cds/pricing": "1.0.4",
+
+        "cds/pricing-sqsconsumer": "1.0.10",
+
+        "cds/product-attribute-cache": "1.0.1",
+
+        "cds/salesrule-data": "1.0.47",
+
+        "cds/shipping-delivery-email": "1.0.47",
+
+        "cds/shop-by-brand": "1.0.4",
+
+        "cds/t1c-redemption-max-rate": "1.0.3",
+
+        "cds/t1c-redemption-max-rate-staging": "1.0.0",
+
+        "cds/virtual-category": "1.0.7",
+
+        "central/2c2p-123": "2.1.15",
+
+        "central/2c2p-creditcardpromotion": "1.3.24",
+
+        "central/2c2p-ipp": "2.2.17",
+
+        "central/2c2p-mcom": "2.0.4",
+
+        "central/2c2p-payment": "2.2.12",
+
+        "central/abandoned-cart-email-adobe": "1.0.25",
+
+        "central/abstract-store": "1.1.5",
+
+        "central/abstract-store-allocated-capacity": "1.0.1",
+
+        "central/abstract-store-allocated-capacity-wyomind": "1.0.17",
+
+        "central/abstract-store-brand-promotion": "1.0.0",
+
+        "central/abstract-store-brand-promotion-wyomind": "1.0.2",
+
+        "central/abstract-store-directory": "1.0.1",
+
+        "central/abstract-store-directory-wyomind": "1.1.0",
+
+        "central/abstract-store-event": "1.1.0",
+
+        "central/abstract-store-event-wyomind": "1.2.1",
+
+        "central/abstract-store-opening-hours": "1.0.3",
+
+        "central/abstract-store-opening-hours-wyomind": "1.0.12",
+
+        "central/abstract-store-promotion": "1.0.1",
+
+        "central/abstract-store-promotion-wyomind": "1.1.4",
+
+        "central/abstract-store-restaurant": "1.0.2",
+
+        "central/abstract-store-restaurant-wyomind": "1.1.0",
+
+        "central/abstract-store-service": "1.0.1",
+
+        "central/abstract-store-service-wyomind": "1.1.0",
+
+        "central/abstract-store-shop": "1.0.2",
+
+        "central/abstract-store-shop-wyomind": "1.0.9",
+
+        "central/abstract-store-stock": "1.0.4",
+
+        "central/abstract-store-store-delivery": "1.0.0",
+
+        "central/abstract-store-store-delivery-wyomind": "1.0.0",
+
+        "central/abstract-store-store-pickup": "1.0.2",
+
+        "central/abstract-store-store-pickup-wyomind": "1.0.8",
+
+        "central/abstract-store-taxonomy": "1.0.2",
+
+        "central/abstract-store-taxonomy-wyomind": "1.1.0",
+
+        "central/abstract-store-wyomind": "1.3.6",
+
+        "central/adobe-campaign-email": "1.0.18",
+
+        "central/affiliate-order": "1.0.7",
+
+        "central/aheadworks-rbslider-optimizer": "1.1.1",
+
+        "central/amasty-banners": "1.0.0",
+
+        "central/amasty-promo": "2.1.11",
+
+        "central/amasty-promo-enhancer": "1.1.0",
+
+        "central/amasty-promo-item-enhancer": "1.0.1",
+
+        "central/api-log": "1.0.7",
+
+        "central/apienhancer": "1.1.3",
+
+        "central/app-notification-airship": "1.0.13",
+
+        "central/app-notification-insider": "1.0.5",
+
+        "central/app-notification-interface": "1.0.2",
+
+        "central/apple-signin": "1.0.5",
+
+        "central/async-image-import": "1.0.13",
+
+        "central/attribute-option-provider-optimizer": "1.0.0",
+
+        "central/authentication": "1.1.1",
+
+        "central/auto-apply-2c2p-creditcard": "1.0.18",
+
+        "central/backorder": "1.0.8",
+
+        "central/billing-address-persister-enhancer": "1.0.0",
+
+        "central/brand-api": "1.0.3",
+
+        "central/cache-get-attribute-config": "1.0.1",
+
+        "central/camp-coupon": "1.0.2",
+
+        "central/camp-integration": "1.0.3",
+
+        "central/campaign-rule-mapping": "1.0.3",
+
+        "central/cart-collector-optimizer": "1.1.1",
+
+        "central/cart-item-selector": "1.0.4",
+
+        "central/catalog-category-indexer": "1.0.0",
+
+        "central/catalog-enhancer": "1.0.1",
+
+        "central/catalog-import-export": "2.0.0",
+
+        "central/catalog-import-export-multiple-users": "1.1.0",
+
+        "central/catalog-inventory-sync": "1.1.2",
+
+        "central/catalog-message-bus": "1.0.2",
+
+        "central/catalog-product-import-queue": "1.1.0",
+
+        "central/catalog-rule": "1.0.1",
+
+        "central/catalog-service": "1.0.1",
+
+        "central/catalog-service-force-sync": "1.0.3",
+
+        "central/catalog-staging": "1.0.3",
+
+        "central/category": "2.0.5",
+
+        "central/category-api": "1.1.0",
+
+        "central/category-image-m233": "1.0.0",
+
+        "central/category-product-count-indexer": "1.0.15",
+
+        "central/categoryicon": "1.0.0",
+
+        "central/central-jda-product-attribute": "1.0.3",
+
+        "central/central-stock-source-import": "1.1.0",
+
+        "central/checkout-top-message": "1.0.1",
+
+        "central/cod-product-attribute-restriction": "1.1.0",
+
+        "central/cod-restriction": "1.0.8",
+
+        "central/cod-restriction-adapter": "1.0.1",
+
+        "central/compensate-reservation-api": "1.0.14",
+
+        "central/compensate-reservation-mcom": "1.0.18",
+
+        "central/compensate-reservation-restriction": "1.0.14",
+
+        "central/config-fallback": "1.0.1",
+
+        "central/coupon-coupon-discount-total": "1.0.3",
+
+        "central/coupon-ownership-campaign": "1.0.1",
+
+        "central/coupon-restriction": "1.1.0",
+
+        "central/coupon-restriction-ownership": "1.0.7",
+
+        "central/custom-price-format": "1.0.1",
+
+        "central/custom-price-validate": "1.0.3",
+
+        "central/customer-api": "1.2.12",
+
+        "central/customer-permission": "1.0.0",
+
+        "central/customer-profile-image": "1.0.6",
+
+        "central/db-slave-restriction": "1.0.5",
+
+        "central/db-slave-restriction-endpoint-pattern": "1.0.2",
+
+        "central/db-slave-restriction-product-repository": "1.0.0",
+
+        "central/db-status-validator": "1.0.0",
+
+        "central/deathstar": "1.0.1",
+
+        "central/delivery-from-store": "1.0.16",
+
+        "central/delivery-from-store-pin-validator": "1.0.3",
+
+        "central/delivery-from-store-shipping-delivery-email": "1.0.1",
+
+        "central/delivery-item-message-producer": "1.0.9",
+
+        "central/delivery-item-status": "1.3.36",
+
+        "central/delivery-options-processor": "1.1.18",
+
+        "central/delivery-options-processor-delivery-from-store": "1.0.12",
+
+        "central/delivery-options-processor-store-pickup": "1.0.3",
+
+        "central/delivery-options-renderer": "1.0.11",
+
+        "central/delivery-promise-email": "1.0.25",
+
+        "central/delivery-surcharge-fee": "1.1.0",
+
+        "central/disablefrontend": "1.0.0",
+
+        "central/distributedlock": "1.0.4",
+
+        "central/e-ordering": "1.2.15",
+
+        "central/e-ordering-report": "1.1.6",
+
+        "central/edit-order": "1.0.17",
+
+        "central/elasticsearch-mview-price-indexer": "1.0.2",
+
+        "central/elasticsearch-mview-stock-indexer": "1.0.2.x-dev",
+
+        "central/elasticsuite-indexer": "2.0.33",
+
+        "central/elasticsuite-indexer-custom-index-analysis": "1.0.2",
+
+        "central/elasticsuite-product-size-map-indexer": "1.0.1",
+
+        "central/email-sender": "1.0.0",
+
+        "central/enhanced-caching": "1.0.3",
+
+        "central/esb-api": "1.3.9",
+
+        "central/estimate-delivery-product": "1.0.49",
+
+        "central/facebook-login": "1.0.11",
+
+        "central/filesystem": "1.0.0",
+
+        "central/flash-deal": "1.2.1",
+
+        "central/free-shipping-offer": "1.0.9",
+
+        "central/freebie-return-item": "2.0.28",
+
+        "central/gtm": "1.1.10",
+
+        "central/hours-pickup-sms-notification": "1.0.14",
+
+        "central/improve-product-ui": "1.0.0",
+
+        "central/incentive-code": "1.0.10",
+
+        "central/independent-mview-update": "1.0.8",
+
+        "central/indexer": "1.0.0",
+
+        "central/inventory-catalog": "1.0.2",
+
+        "central/inventory-catalog-admin-ui-enhancer": "1.0.3",
+
+        "central/inventory-configuration-optimizer": "1.0.5",
+
+        "central/inventory-enhancer": "1.0.1",
+
+        "central/kafka-integration": "1.0.0",
+
+        "central/leia-product-import": "1.0.0",
+
+        "central/line-item": "1.0.24",
+
+        "central/line-item-mcom": "1.0.7",
+
+        "central/line-item-rma": "1.0.5",
+
+        "central/line-item-status": "1.0.32",
+
+        "central/line-item-status-mcom": "1.0.21",
+
+        "central/line-item-stock": "1.0.15",
+
+        "central/line-item-stock-ship-from-store": "1.0.0",
+
+        "central/magento-cron-disable": "1.0.4",
+
+        "central/mageworx-shippingrules": "1.1.11.2",
+
+        "central/marketplace": "1.5.8",
+
+        "central/marketplace-configurable-product": "1.1.18",
+
+        "central/marketplace-delivery-status": "1.0.6",
+
+        "central/marketplace-product-url-generator": "1.0.0",
+
+        "central/mcom": "1.7.43",
+
+        "central/mcom-inventory": "1.1.21",
+
+        "central/mcom-message-filter": "2.0.6",
+
+        "central/mcom-message-retry": "1.0.1",
+
+        "central/mcom-status-restriction": "1.0.2",
+
+        "central/mcom-stock-update-optimization": "1.0.0",
+
+        "central/mcom-tools": "1.0.0",
+
+        "central/message-queue": "1.0.2",
+
+        "central/mini-cart": "1.0.0",
+
+        "central/module-quoteitemeordertracker": "1.0.5",
+
+        "central/msi-amasty-promo": "1.0.3",
+
+        "central/msi-hours-pickup-notification-adaptor": "1.0.17",
+
+        "central/msi-message-bus": "1.0.15",
+
+        "central/msi-product-api": "1.0.3",
+
+        "central/msi-store-picker": "1.1.7",
+
+        "central/msi-store-picker-delivery-from-store": "1.0.9",
+
+        "central/msi-store-picker-delivery-from-store-wyomind": "1.0.5",
+
+        "central/msi-store-picker-stock-status": "1.0.7",
+
+        "central/msi-store-picker-store-pickup": "1.0.17",
+
+        "central/msi-store-picker-wyomind": "1.0.10",
+
+        "central/multi-item-payment-restriction": "1.0.2",
+
+        "central/multi-item-payment-restriction-adapter": "1.0.0",
+
+        "central/multi-shipping": "1.0.11",
+
+        "central/multi-shipping-line-item": "1.0.1",
+
+        "central/multi-shipping-line-item-mcom": "1.0.1",
+
+        "central/multi-shipping-payment-restriction": "1.0.5",
+
+        "central/multi-shipping-pickup-at-store": "1.0.0",
+
+        "central/multi-shipping-salesrule-tracker": "1.0.3",
+
+        "central/multi-shipping-shipping-method": "1.0.4",
+
+        "central/multi-shipping-split-order": "1.0.30",
+
+        "central/multi-shipping-split-payment": "1.0.5",
+
+        "central/multi-shipping-t1c-redemption": "1.0.15",
+
+        "central/multi-shipping-virtual-offline-payment": "1.0.7",
+
+        "central/newsletter": "1.1.5",
+
+        "central/notification-queue-db": "1.1.7",
+
+        "central/notification-queue-interface": "1.0.2",
+
+        "central/offline-shipping": "1.0.2",
+
+        "central/opcache": "1.0.3",
+
+        "central/order-data-processor": "1.0.0",
+
+        "central/order-email-event": "1.0.8",
+
+        "central/order-email-event-mcom-status-update": "1.0.1",
+
+        "central/order-email-event-order-save-trigger": "1.0.3",
+
+        "central/order-email-event-smtp-sender": "1.0.7",
+
+        "central/order-email-notification": "1.0.3",
+
+        "central/order-guest-owner": "1.0.3",
+
+        "central/order-notification": "1.0.10",
+
+        "central/order-sequence": "1.0.0",
+
+        "central/orderstatus": "1.0.1",
+
+        "central/payatstore": "1.0.0",
+
+        "central/payatstore-pos-restriction": "1.0.6",
+
+        "central/payatstore-product-attribute-restriction": "1.0.3",
+
+        "central/payatstore-restriction": "1.0.4",
+
+        "central/payment-product-restriction": "1.0.6",
+
+        "central/payment-restriction": "1.0.2",
+
+        "central/payment-service-bank-transfer": "1.0.7",
+
+        "central/payment-service-bank-transfer-adapter": "1.0.2",
+
+        "central/payment-service-bin-card": "1.0.0",
+
+        "central/payment-service-dolfin": "1.0.7",
+
+        "central/payment-service-dolfin-adapter": "1.0.1",
+
+        "central/payment-service-fullpayment": "1.0.17",
+
+        "central/payment-service-fullpayment-adapter": "1.0.12",
+
+        "central/payment-service-fullpayment-promotion": "1.0.2",
+
+        "central/payment-service-installment": "1.0.16",
+
+        "central/payment-service-installment-adapter": "1.0.10",
+
+        "central/payment-service-installment-promotion": "1.0.1",
+
+        "central/payment-service-redirect-adapter": "1.0.6",
+
+        "central/payment-status": "1.1.0",
+
+        "central/pickup-at-store": "1.5.37",
+
+        "central/plugin-api-restriction": "1.0.4",
+
+        "central/pointofsale": "1.0.7",
+
+        "central/popular-search-api": "1.0.0",
+
+        "central/pricing": "1.5.31",
+
+        "central/pricing-schedule": "1.0.6",
+
+        "central/product": "1.1.21",
+
+        "central/product-fact-load": "1.1.2",
+
+        "central/product-image-bulk-import": "1.1.2",
+
+        "central/product-import-export-optimizer": "1.0.0",
+
+        "central/product-overlay": "1.0.2.12",
+
+        "central/product-shipping-method-validator": "1.0.2",
+
+        "central/product-size-map": "2.0.1",
+
+        "central/product-update-queue": "1.1.7",
+
+        "central/product-url-generator": "1.6.12",
+
+        "central/productapi": "1.1.27",
+
+        "central/products-sqsconsumer": "2.0.0",
+
+        "central/promo-campaign": "1.0.7",
+
+        "central/promotion-bundle-suggestion": "1.0.8",
+
+        "central/promotion-credit-card-suggestion": "1.0.2",
+
+        "central/promotion-engine-integration": "1.0.9",
+
+        "central/promotion-freeitem-suggestion": "1.0.0",
+
+        "central/promotion-indexer": "1.0.5",
+
+        "central/promotion-offer": "1.2.24",
+
+        "central/promotion-suggestion": "1.0.8",
+
+        "central/quote-api-multi": "1.1.1",
+
+        "central/quote-cache-fix": "1.1.0",
+
+        "central/quote-cleanup": "1.0.3",
+
+        "central/quote-collect-optimize": "1.0.2",
+
+        "central/quote-extension-attributes": "1.0.10",
+
+        "central/quote-item-special-price-tracker": "1.1.10",
+
+        "central/quote-order-client-type": "1.0.10",
+
+        "central/quote-plugin-fix": "1.0.5",
+
+        "central/quote-resolver-cache": "1.0.1",
+
+        "central/quote-salesrule-tracker": "1.4.19",
+
+        "central/quote-shipping-rate": "1.0.4",
+
+        "central/rbslider": "1.2.8",
+
+        "central/recurring-setup-restriction": "1.0.0",
+
+        "central/region": "0.0.2.2",
+
+        "central/return-refund-exchange": "1.0.31",
+
+        "central/review-api": "1.0.4.9",
+
+        "central/review-catalog-service": "1.0.2",
+
+        "central/sales-api": "1.1.23",
+
+        "central/sales-rule-cart-fixed-action": "2.1.6",
+
+        "central/sales-rule-enhancer": "1.0.0",
+
+        "central/sales-rule-fix-save-deadlock": "1.0.4",
+
+        "central/sales-rule-optimizer": "1.0.0",
+
+        "central/sales-rule-staging-optimizer": "1.0.2",
+
+        "central/sales-rule-update-usage": "1.0.0",
+
+        "central/sales-sequence": "1.0.0",
+
+        "central/salesorderaddress": "1.0.3",
+
+        "central/salesrule-coupon-fix": "1.0.1",
+
+        "central/salesrule-custom-conditions": "1.1.3",
+
+        "central/salesrule-discount-condition": "1.0.5",
+
+        "central/salesrule-filtertext-optimizer": "1.0.1",
+
+        "central/salesrule-maxdiscount": "1.0.4",
+
+        "central/salesrule-message-producer": "1.0.7",
+
+        "central/salesrule-overlay": "1.0.10",
+
+        "central/salesrule-platform-condition": "1.0.2",
+
+        "central/salesrule-search": "1.0.13",
+
+        "central/salesrule-subtotal-condition": "1.0.0",
+
+        "central/scalable-inventory": "1.0.0",
+
+        "central/secret-success-page": "1.0.1",
+
+        "central/service-bus-topic-exclusion": "0.0.2",
+
+        "central/servicebus-optimizer": "1.1.6",
+
+        "central/shipping-payment-restriction": "1.0.1",
+
+        "central/shipping-product-restriction": "1.1.6",
+
+        "central/shipping-tax": "1.0.5",
+
+        "central/shipping-time-restriction": "1.0.2",
+
+        "central/shop-by-brand": "1.1.21",
+
+        "central/sku-migration": "1.0.24",
+
+        "central/smsnotification": "1.0.19",
+
+        "central/sqsconsumer": "1.0.0",
+
+        "central/sqsdatalog": "1.0.2",
+
+        "central/staging-optimizer": "1.0.5",
+
+        "central/stock-indexer": "1.1.0",
+
+        "central/store-default-stock-mcom-integration": "1.0.3",
+
+        "central/store-pickup": "4.0.30",
+
+        "central/store-pickup-package-option": "1.0.2",
+
+        "central/store-pickup-stock-mcom-integration": "1.0.9",
+
+        "central/store-ship-from-store": "1.0.4",
+
+        "central/store-ship-from-store-mcom-integration": "1.0.1",
+
+        "central/store-switcher": "1.0.2",
+
+        "central/t1-login": "1.0.2",
+
+        "central/t1-passport": "1.3.13",
+
+        "central/t1c-redemption": "1.10.35",
+
+        "central/t1c-redemption-exclusion": "1.0.5",
+
+        "central/tax": "1.0.3",
+
+        "central/urlredirect": "1.0.5",
+
+        "central/urlrewrite": "1.0.3.7",
+
+        "central/version-api": "1.0.1",
+
+        "central/vertex-tax": "1.0.0",
+
+        "central/webapi": "2.0.2",
+
+        "central/wishlist": "1.0.41",
+
+        "central/wysiwyg-advanced": "1.0.1",
+
+        "central/wysiwyg-custom-image-size": "0.0.1",
+
+        "colinmollenhour/cache-backend-redis": "1.11.0 as 1.10.6",
+
+        "commerceextension/productattribute-import-export": "1.0.0",
+
+        "composer/composer": "1.9.1",
+
+        "cweagans/composer-patches": "1.6.6",
+
+        "flow/jsonpath": "0.5.0",
+
+        "magefan/module-wysiwyg-advanced": "2.0.5.2",
+
+        "magento/framework": "102.0.3",
+
+        "magento/mcom-connector": "3.3.0",
+
+        "magento/product-enterprise-edition": "2.3.3",
+
+        "mageplaza/module-smtp": "1.2.11",
+
+        "mageworx/module-geoip": "2.1.3",
+
+        "mageworx/module-shippingrules": "2.9.3",
+
+        "smile/elasticsuite": "2.6.9",
+
+        "wyomind/core": "3.5.4.1",
+
+        "wyomind/pickupatstore": "3.5.0.2",
+
+        "wyomind/pointofsale": "6.4.3"
+
+    },
+
+    "require-dev": {
+
+        "allure-framework/allure-phpunit": "1.2.3",
+
+        "friendsofphp/php-cs-fixer": "v2.13.3",
+
+        "lusitanian/oauth": "~0.8.10",
+
+        "magento/magento-coding-standard": "~1.0.0",
+
+        "magento/magento2-functional-testing-framework": "2.3.14",
+
+        "pdepend/pdepend": "2.5.2",
+
+        "phpmd/phpmd": "@stable",
+
+        "phpunit/phpunit": "~6.5.0",
+
+        "sebastian/phpcpd": "~3.0.0",
+
+        "squizlabs/php_codesniffer": "3.3.1",
+
+        "deployer/recipes": "^6.1",
+
+        "pyrech/composer-changelogs": "v1.7.0",
+
+        "mockery/mockery": "1.2.4"
+
+    },
+
+    "minimum-stability": "stable",
+
+    "conflict": {
+
+        "gene/bluefoot": "*"
+
+    },
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+
+            "Magento\\Setup\\": "setup/src/Magento/Setup/",
+
+            "Magento\\": "app/code/Magento/",
+
+            "Zend\\Mvc\\Controller\\": "setup/src/Zend/Mvc/Controller/"
+
+        },
+
+        "psr-0": {
+
+            "": [
+
+                "app/code/",
+
+                "generated/code/"
+
+            ]
+
+        },
+
+        "files": [
+
+            "app/etc/NonComposerComponentRegistration.php"
+
+        ],
+
+        "exclude-from-classmap": [
+
+            "**/dev/**",
+
+            "**/update/**",
+
+            "**/Test/**"
+
+        ]
+
+    },
+
+    "autoload-dev": {
+
+        "psr-4": {
+
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+
+        }
+
+    },
+
+    "version": "2.3.2",
+
+    "repositories": {
+
+        "private-packagist": {
+
+            "type": "composer",
+
+            "url": "https://repo.packagist.com/central/central-github/"
+
+        }
+
+    },
+
+    "extra": {
+
+        "magento-force": "override",
+
+        "composer-exit-on-patch-failure": true,
+
+        "patches": {
+
+            "smile/elasticsuite": {
+
+                "Remove non-existance Layer Plugin": "patches/elasticsuite-remove-layer.patch",
+
+                "Skip array_filter on flash_deal_position": "patches/smile/elasticsuite/src/module-elasticsuite-catalog/skip_array_filter_on_flash_deal_position.patch"
+
+            },
+
+            "magento/framework": {
+
+                "Disable XML validation": "patches/disable-xml-validation.patch",
+
+                "2.3.3 EmailMessageInterface backward compatibility issue patch": "patches/EmailMessageInterface-backward-compatibility-framework.patch",
+
+                "Add LIBXML_PARSEHUGE to fix Huge input lookup": "patches/add-libxml-parsehuge.patch"
+
+            },
+
+            "magento/module-email": {
+
+                "2.3.3 EmailMessageInterface backward compatibility issue patch": "patches/EmailMessageInterface-backward-compatibility-module-email.patch"
+
+            },
+
+            "magento/magento2-base": {
+
+				"2.3.3 EmailMessageInterface backward compatibility issue patch": "patches/EmailMessageInterface-backward-compatibility-test.patch",
+
+				"FIX validate input by pattern": "patches/magento2-base-fix-validate-input-with-pattern.patch"
+
+            },
+
+            "magento/module-service-bus": {
+
+                "single message processor init to ignore patch": "patches/single-message-processor-init-to-ignore.patch"
+
+            },
+
+            "amasty/module-special-promo": {
+
+                "Round float number when calculate discount amount": "patches/amasty/module-special-promo/round-discount-amount-for-setoffixed.patch"
+
+            },
+
+            "amasty/module-special-promo-pro": {
+
+                "Performance fix from Amasty supporter": "patches/amasty/module-special-promo-pro/performance_fix_from_Amasty_supporter.diff"
+
+            },
+
+            "magento/module-sales-rule": {
+
+                "Hot fix 20200514" : "patches/hotfix20200514_patch/magento_module-sales-rule.patch"
+
+            },
+
+            "mageworx/module-shippingrules": {
+
+                "Hot fix 20200514" : "patches/hotfix20200514_patch/mageworx_module-shippingrules.patch"
+
+            },
+
+            "amasty/rgrid": {
+
+                "Remove duplicate column action": "patches/amasty/rgrid/remove_duplicate_column_action.patch"
+
+            },
+
+            "aheadworks/module-rbslider": {
+
+                "remove factory create in constructor": "patches/aheadworks/0001-refactor-optimize-CDS-10253-remove-factory-create-in.patch"
+
+            },
+
+			"magento/module-quote": {
+
+				"check stock qty issue when update cart with configurable option": "patches/magento/module-quote/0001-fix-add-cart-check-stock-qty-issue-when-update-cart-.patch",
+
+                "fix bug update qty issue when update cart with configurable option": "patches/magento/module-quote/CNC-1797-fix-bug-update-qty-configuration.patch"
+
+			},
+
+            "magento/module-eav": {
+
+                "2.3.3 Performance improvement while adding items to cart": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-eav.patch"
+
+            },
+
+            "magento/module-inventory": {
+
+                "2.3.3 Performance improvement while adding items to cart, inventory": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory.patch"
+
+            },
+
+            "magento/module-inventory-catalog": {
+
+                "2.3.3 Performance improvement while adding items to cart, catalog": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory-catalog.patch"
+
+            },
+
+            "magento/module-inventory-configuration": {
+
+                "2.3.3 Performance improvement while adding items to cart, config": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory-configuration.patch"
+
+            },
+
+            "magento/module-inventory-indexer": {
+
+                "Remove Table Exists Validation": "patches/get-stock-item-data.diff",
+
+                "2.3.3 Performance improvement while adding items to cart, indexer": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory-indexer.patch"
+
+            },
+
+            "magento/module-inventory-reservations": {
+
+                "2.3.3 Performance improvement while adding items to cart, reservation": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory-reservations.patch"
+
+            },
+
+            "magento/module-inventory-sales": {
+
+                "2.3.3 Performance improvement while adding items to cart, sales": "patches/MDVA-28533_EE_2.3.3_COMPOSER_v1-module-inventory-sales.patch"
+
+            },
+
+            "magento/module-catalog": {
+
+                "Get attribute raw value ": "patches/magento_module-catalog-get-attribute-raw-value.patch"
+
+            },
+
+            "magento/module-page-builder-analytics": {
+
+                "Fix error when run cron analytics_collect_data": "patches/magento/module-page-builder-analytics/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch"
+
+            },
+
+            "magento/module-staging": {
+
+                "CNC-1411 Prevent MDC from clear all cache tags": "patches/magento/module-staging/cnc-1411-prevent-magento-from-clean-all-caches.patch"
+
+            },
+
+            "magento/module-product-video": {
+
+                "Vimeo Simple API Stop Working As Expected": "patches/magento/module-product-video/MC-40463__Vimeo-simple-API-stop-working-as-expected.patch"
+
+            },
+
+            "magento/module-integration": {
+
+                "PNP-1595: Fix Customer Token": "patches/magento/module-integration/PNP-1595-fix-customer-token-bug.patch"
+
+            }
+
+        }
+
+    },
+
+    "replace": {
+
+        "klarna/module-kp": "*",
+
+        "klarna/module-ordermanagement": "*",
+
+        "klarna/module-core": "*"
+
+    }
+
+}
+
