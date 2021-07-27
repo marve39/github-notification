@@ -14,10 +14,7 @@ jobs:
     steps:
       - name: Release Version
         run: |
-          echo "$GITHUB_REF"
-          echo "$GITHUB_HEAD_REF"
-          echo "$GITHUB_BASE_REF"
-          echo "$GITHUB_SHA"
+          echo "$(jq -r .version composer.json)-$(echo $GITHUB_SHA" | cut -c1-8)"
       - name: Get Pokemon name
         uses: ./ # Uses an action in the root directory
         with:
