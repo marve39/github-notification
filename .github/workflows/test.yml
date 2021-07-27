@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: We test it locally with act
     steps:
+      - uses: actions/checkout@v2
       - name: Release Version
         run: |
           echo "$(jq -r .version composer.json)-$(echo $GITHUB_SHA | cut -c1-8)"
