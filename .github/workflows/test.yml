@@ -5,6 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: We test it locally with act
     steps:
+      - name: Release Version
+        run: |
+          echo "${{ env.GITHUB_REF }}"
+          echo "${{ env.GITHUB_HEAD_REF }}"
+          echo "${{ env.GITHUB_BASE_REF }}"
+          echo "${{ env.GITHUB_SHA }}"
       - name: Get Pokemon name
         uses: ./ # Uses an action in the root directory
         with:
