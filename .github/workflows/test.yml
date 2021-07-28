@@ -19,6 +19,7 @@ jobs:
         run: |
           echo "MDC_VERSION=$(jq -r .version composer.json)-$(echo $GITHUB_SHA | cut -c1-8)" >> $GITHUB_ENV
           echo "BRANCH=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+          echo "${GITHUB_REF}"
       - name: Set Tag
         if: startsWith(github.ref, 'refs/tags/')
         run: |
